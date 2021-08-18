@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
-       uses: actions/checkout@v2
+      uses: actions/checkout@v2
 
     - name: Comment on new issue
-       uses: actions/github-script@0.8.0
-        with:
+      uses: actions/github-script@0.8.0
+      with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
              const fs = require('fs')
